@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dani0\\Downloads\\Api-Juego\\JuegoApi\\JuegoApi.csproj": {}
+    "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dani0\\Downloads\\Api-Juego\\JuegoApi\\JuegoApi.csproj": {
+    "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dani0\\Downloads\\Api-Juego\\JuegoApi\\JuegoApi.csproj",
+        "projectUniqueName": "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj",
         "projectName": "JuegoApi",
-        "projectPath": "C:\\Users\\dani0\\Downloads\\Api-Juego\\JuegoApi\\JuegoApi.csproj",
+        "projectPath": "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj",
         "packagesPath": "C:\\Users\\dani0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dani0\\Downloads\\Api-Juego\\JuegoApi\\obj\\",
+        "outputPath": "C:\\Users\\dani0\\Downloads\\apijuego\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,6 +75,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.2.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
