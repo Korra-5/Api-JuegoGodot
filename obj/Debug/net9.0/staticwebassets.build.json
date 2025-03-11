@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "xAGDlEqhBHmGrdIpZP1+fIhJG6E56QajYTmfehepNJw=",
+  "Source": "JuegoApi",
+  "BasePath": "_content/JuegoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
