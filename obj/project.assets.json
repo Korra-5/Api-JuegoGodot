@@ -8555,11 +8555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj",
+      "projectUniqueName": "C:\\Users\\dani0\\Documents\\GitHub\\Api-JuegoGodot\\JuegoApi.csproj",
       "projectName": "JuegoApi",
-      "projectPath": "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj",
+      "projectPath": "C:\\Users\\dani0\\Documents\\GitHub\\Api-JuegoGodot\\JuegoApi.csproj",
       "packagesPath": "C:\\Users\\dani0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dani0\\Downloads\\apijuego\\obj\\",
+      "outputPath": "C:\\Users\\dani0\\Documents\\GitHub\\Api-JuegoGodot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

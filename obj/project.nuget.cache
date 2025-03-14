@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4z6kY4C8J7o=",
+  "dgSpecHash": "NQAgNMWK69o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dani0\\Downloads\\apijuego\\JuegoApi.csproj",
+  "projectFilePath": "C:\\Users\\dani0\\Documents\\GitHub\\Api-JuegoGodot\\JuegoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dani0\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\dani0\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
