@@ -77,8 +77,7 @@ namespace JuegoApi.Controllers
             }
 
             return NoContent();
-        }
-// POST: api/JuegoItems
+        }// POST: api/JuegoItems
 [HttpPost]
 public async Task<ActionResult<JuegoItem>> PostJuegoItem(JuegoItem juegoItem)
 {
@@ -96,10 +95,20 @@ public async Task<ActionResult<JuegoItem>> PostJuegoItem(JuegoItem juegoItem)
         // Actualiza el tiempo solo si el nuevo es mejor (menor) que el almacenado
         if (juegoItem.Time < existingTime)
         {
-            existingItem.Time = juegoItem.Time;
-            await _timerCollection.ReplaceOneAsync(item => item.Name == juegoItem.Name, existingItem);
+            // Actualizar el documento en la base de datos
+            var filter = Builders<JuegoItem>.Filter.Eq(item => item.Name, juegoItem.Name);
+            var update = Builders<JuegoItem>.Update.Set(item => item.Time, juegoItem.Time);
+            
+            await _timerCollection.UpdateOneAsync(filter, update);
+            
+            // Retornar el item actualizado (no el existingItem que tiene el tiempo antiguo)
+            return CreatedAtAction(nameof(GetJuegoItem), new { name = juegoItem.Name }, juegoItem);
         }
-        return CreatedAtAction(nameof(GetJuegoItem), new { name = juegoItem.Name }, existingItem);
+        else
+        {
+            // Si el tiempo no es mejor, solo retornar el existente
+            return CreatedAtAction(nameof(GetJuegoItem), new { name = juegoItem.Name }, existingItem);
+        }
     }
     else
     {
