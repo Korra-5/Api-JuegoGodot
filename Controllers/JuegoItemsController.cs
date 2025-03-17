@@ -13,12 +13,8 @@ namespace JuegoApi.Controllers
         // Declaramos la colección de MongoDB donde se guardarán los registros
         private readonly IMongoCollection<JuegoItem> _timerCollection;
 
-        // Cadena de conexión a MongoDB
         private readonly string _connectionString = "mongodb+srv://dani05corral:JNqUILsjfRSsHh7w@cluster0.iukey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
-        /// <summary>
-        /// Constructor del controller. Inicializa el cliente de MongoDB, la base y la colección.
-        /// </summary>
         public JuegoItemsController()
         {
             var client = new MongoClient(_connectionString);
@@ -34,7 +30,7 @@ namespace JuegoApi.Controllers
             return Ok(juegoItems);
         }
 
-        // NUEVO ENDPOINT: GET: api/JuegoItems/top5
+        // GET: api/JuegoItems/top5
         [HttpGet("top5")]
         public async Task<ActionResult<IEnumerable<JuegoItem>>> GetTop5JuegoItems()
         {
@@ -101,7 +97,6 @@ public async Task<ActionResult<JuegoItem>> PostJuegoItem(JuegoItem juegoItem)
             
             await _timerCollection.UpdateOneAsync(filter, update);
             
-            // Retornar el item actualizado (no el existingItem que tiene el tiempo antiguo)
             return CreatedAtAction(nameof(GetJuegoItem), new { name = juegoItem.Name }, juegoItem);
         }
         else
